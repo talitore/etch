@@ -2,6 +2,7 @@ extends layout
 
 block head
   script(src='javascripts/canvas.js')
+  script(src='javascripts/user_list.js')
 
 block content
   .row
@@ -14,4 +15,6 @@ block content
     .small-10.columns
       canvas#canvas
     .small-2.columns
-      .user-list.panel
+      .user-list
+        h4 Users
+        ul.no-bullet#user-list

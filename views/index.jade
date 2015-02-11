@@ -4,6 +4,14 @@ block head
   script(src='javascripts/canvas.js')
 
 block content
-  h1= 'Whiteboard!'
-  h2= 'Draw on me.'
-  canvas#canvas
+  .row
+    .small-4.columns
+      h2 Etch
+      //- #[small Host: Taylor]
+    .small-2.columns
+      //- a#rooms-button(href='#', class='button secondary')= 'Rooms'
+  .row
+    .small-10.columns
+      canvas#canvas
+    .small-2.columns
+      .user-list.panel

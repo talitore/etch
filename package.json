@@ -1,6 +1,9 @@
 {
   "name": "Etch",
   "version": "0.0.2",
+  "engines": {
+    "node": "0.12.0"
+  },
   "private": true,
   "description": "A collaborative whiteboard tool used for training and presentations.",
   "author": "GeneralAssemb.ly <tech@generalassemb.ly>",

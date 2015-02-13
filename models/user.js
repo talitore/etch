@@ -3,13 +3,17 @@ function User(data) {
 }
 // Instance Methods
 User.prototype.data = {};
-User.prototype.changeName = function (name) {
-  this.data.name = name;
-};
-
+// Bad practice to mutate the data attribute
+User.prototype.get = function (name) {
+    return this.data[name];
+}
+User.prototype.set = function (name, value) {
+    this.data[name] = value;
+}
 // User.prototype.joinRoom = function () {
 // };
 
+// Class Methods
 // User.findById = function (id, callback) {
 // };
 
